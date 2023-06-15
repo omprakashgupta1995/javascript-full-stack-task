@@ -1,4 +1,4 @@
-function sendApi(method, url) {
+function sendApi(method, url, data) {
     return new Promise(function (resolve, reject) {
         let xhr = new XMLHttpRequest();
         xhr.open(method, url, true);
@@ -14,6 +14,7 @@ function sendApi(method, url) {
                 reject(this.responseText);
             }
         }
-        xhr.send();
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify(data));
     })
 }

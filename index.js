@@ -25,6 +25,9 @@ routes.use('/user', user);
 routes.get('/', (req, res) => {
     res.sendFile(path.join(__dirname,"index.html"))
 });
+routes.get('/update/:id', (req, res) => {
+    res.sendFile(path.join(__dirname,"index.html"))
+});
 routes.get('/admin', (req, res) => {
     res.sendFile(path.join(__dirname,"admin.html"))
 });
