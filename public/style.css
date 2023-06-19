@@ -1,0 +1,17 @@
+
+
+.form-container {
+    display: flex;
+    padding: 0 300px 0;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid ;
+    padding: 10px 20px;
+}
+
+.div-one {
+    display: flex;
+    justify-content:space-between ;
+}
